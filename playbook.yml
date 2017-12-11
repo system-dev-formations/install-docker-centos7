@@ -1,0 +1,10 @@
+---
+
+- hosts: lunanode 
+  become: true
+  roles:
+    - sysdev.docker
+    - sysdev.openshift
+  tasks:
+    - name: simple ping 
+      ping: 
