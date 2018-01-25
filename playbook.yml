@@ -1,5 +1,4 @@
 ---
-
 - hosts: lunanode 
   become: true
   roles:
