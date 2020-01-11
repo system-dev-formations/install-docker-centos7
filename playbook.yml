@@ -1,9 +1,9 @@
 ---
-- hosts: lunanode 
+- hosts: localhost
   become: true
   roles:
     - sysdev.docker
-    - sysdev.openshift
+    #- sysdev.openshift
   tasks:
     - name: simple ping 
       ping: 

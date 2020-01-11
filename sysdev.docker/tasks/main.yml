@@ -4,8 +4,6 @@
   become: true
   yum: name={{item}} state=present update_cache=yes
   with_items:
-    - git
-    - wget
     - yum-utils
     - device-mapper-persistent-data
     - lvm2
@@ -38,10 +36,3 @@
     - iftop
 - name: install python pip
   yum: name=python-pip state=present update_cache=yes
-- name: Install docker-compose and others
-  pip:  name={{item}}
-  with_items:
-    - docker-compose
-    - pyopenssl
-    - ndg-httpsclient
-    - pyasn1
