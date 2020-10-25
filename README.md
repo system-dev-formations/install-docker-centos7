@@ -6,7 +6,7 @@
 ```
 Install python3
 ```shell script
-sudo yum -y install python3
+sudo yum -y install -y python3
 ```
  
 ## Set up a python virtualenv, and install ansible
